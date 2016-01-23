@@ -1,18 +1,18 @@
 // ***** Variables ***** //
 
-/* Grid Breakpoints */
+// ***** Grid Breakpoints ***** //
 $grid-breakpoint-small: 544px !default; // Small screen / phone
 $grid-breakpoint-medium: 768px !default; // Medium screen / tablet
 $grid-breakpoint-large: 992px !default; // Large screen / desktop
 $grid-breakpoint-extra-large: 1200px !default; // Extra large screen / wide desktop
 
-/* Conainer Widths */
+// ***** Conainer Widths ***** //
 $container-width-small: 576px !default;
 $container-width-medium: 720px !default;
 $container-width-large: 940px !default;
 $container-width-extra-large: 1080px !default;
 
-/* Gutter Spacing */
+// ***** Gutter Spacing ***** //
 $grid-gutter: 30px !default;
 
 // ***** End Variables ***** //
@@ -84,7 +84,7 @@ $grid-gutter: 30px !default;
     align-self: center;
 }
 
-// ***** Extra small screen / phone ***** //
+/* Extra small screen / phone */
 @media( max-width: $grid-breakpoint-small - 1 ) {
 
     .grid {
@@ -96,7 +96,7 @@ $grid-gutter: 30px !default;
     }
 }
 
-// ***** Small screen / phone ***** //
+/* Small screen / phone */
 @media (min-width: $grid-breakpoint-small) {
 
     .container {
@@ -125,7 +125,7 @@ $grid-gutter: 30px !default;
 
 }
 
-// ***** Medium screen / tablet ***** //
+/* Medium screen / tablet */
 @media (min-width: $grid-breakpoint-medium) {
 
     .container {
@@ -154,7 +154,7 @@ $grid-gutter: 30px !default;
 
 }
 
-// ***** Large screen / desktop ***** //
+/* Large screen / desktop */
 @media (min-width: $grid-breakpoint-large) {
 
     .container {
@@ -183,7 +183,7 @@ $grid-gutter: 30px !default;
 
 }
 
-// ***** Extra large screen / wide desktop ***** //
+/* Extra large screen / wide desktop */
 @media (min-width: $grid-breakpoint-extra-large) {
     .container {
         max-width: $container-width-extra-large;

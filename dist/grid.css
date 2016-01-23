@@ -1,6 +1,3 @@
-/* Grid Breakpoints */
-/* Conainer Widths */
-/* Gutter Spacing */
 /* Container */
 .container {
   margin-left: auto;
@@ -82,6 +79,7 @@
           align-self: center;
 }
 
+/* Extra small screen / phone */
 @media (max-width: 543px) {
   .grid {
     -webkit-box-orient: vertical;
@@ -98,6 +96,7 @@
             flex: 0 0 auto;
   }
 }
+/* Small screen / phone */
 @media (min-width: 544px) {
   .container {
     max-width: 576px;
@@ -138,6 +137,7 @@
             flex: 0 0 50%;
   }
 }
+/* Medium screen / tablet */
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -178,6 +178,7 @@
             flex: 0 0 50%;
   }
 }
+/* Large screen / desktop */
 @media (min-width: 992px) {
   .container {
     max-width: 940px;
@@ -218,6 +219,7 @@
             flex: 0 0 50%;
   }
 }
+/* Extra large screen / wide desktop */
 @media (min-width: 1200px) {
   .container {
     max-width: 1080px;
