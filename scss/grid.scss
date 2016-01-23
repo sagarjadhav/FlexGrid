@@ -1,0 +1,191 @@
+// ***** Variables ***** //
+
+/* Grid Breakpoints */
+$grid-breakpoint-small: 544px !default; // Small screen / phone
+$grid-breakpoint-medium: 768px !default; // Medium screen / tablet
+$grid-breakpoint-large: 992px !default; // Large screen / desktop
+$grid-breakpoint-extra-large: 1200px !default; // Extra large screen / wide desktop
+
+/* Conainer Widths */
+$container-width-small: 576px !default;
+$container-width-medium: 720px !default;
+$container-width-large: 940px !default;
+$container-width-extra-large: 1080px !default;
+
+/* Gutter Spacing */
+$grid-gutter: 30px !default;
+
+// ***** End Variables ***** //
+
+/* Container */
+.container {
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: $grid-gutter / 2;
+    padding-right: $grid-gutter / 2;
+}
+
+/* Grid Cell Wrapper */
+.grid {
+    display: flex;
+    margin-left: -$grid-gutter / 2;
+    margin-right: -$grid-gutter / 2;
+}
+
+/* Grid Cell */
+.grid-cell {
+    flex: 1;
+    min-width: 1px; // Firefox-34-ignoring-max-width-for-flexbox
+    display: inline-block; // In IE 10, setting -ms-flex-flow: row wrap will not wrap unless display: inline-block is set on child elements.
+    list-style: none; // Need when added this class to li
+    padding-left: $grid-gutter / 2;
+    padding-right: $grid-gutter / 2;
+}
+
+// ***** Custom styles for additional flex alignment options. ***** //
+
+/* Grid Wrap */
+.grid-wrap {
+    flex-wrap: wrap;
+}
+
+// ***** Alignment per row ***** //
+
+/* Alignment Top */
+.grid-top {
+    align-self: flex-start;
+}
+
+/* Alignment Bottom */
+.grid-bottom {
+    align-self: flex-end;
+}
+
+/* Alignment Center */
+.grid-center {
+    align-items: center;
+}
+
+// ***** Alignment per cell ***** //
+
+/* Alignment Top */
+.grid-cell-top {
+    align-self: flex-start;
+}
+
+/* Alignment Bottom */
+.grid-cell-bottom {
+    align-self: flex-end;
+}
+
+/* Alignment Center */
+.grid-cell-center {
+    align-self: center;
+}
+
+// ***** Extra small screen / phone ***** //
+@media( max-width: $grid-breakpoint-small - 1 ) {
+
+    .grid {
+        flex-direction: column;
+    }
+
+    .grid-cell {
+        flex: 0 0 auto;
+    }
+}
+
+// ***** Small screen / phone ***** //
+@media (min-width: $grid-breakpoint-small) {
+
+    .container {
+        max-width: $container-width-small;
+    }
+
+    .sm-grid-1-10 {
+        flex: 0 0 10%;
+    }
+
+    .sm-grid-1-5 {
+        flex: 0 0 20%;
+    }
+
+    .sm-grid-1-4 {
+        flex: 0 0 25%;
+    }
+
+    .sm-grid-1-3 {
+        flex: 0 0 33.3333334%;
+    }
+
+    .sm-grid-1-2 {
+        flex: 0 0 50%;
+    }
+
+}
+
+// ***** Medium screen / tablet ***** //
+@media (min-width: $grid-breakpoint-medium) {
+
+    .container {
+        max-width: $container-width-medium;
+    }
+
+    .md-grid-1-10 {
+        flex: 0 0 10%;
+    }
+
+    .md-grid-1-5 {
+        flex: 0 0 20%;
+    }
+
+    .md-grid-1-4 {
+        flex: 0 0 25%;
+    }
+
+    .md-grid-1-3 {
+        flex: 0 0 33.3333334%;
+    }
+
+    .md-grid-1-2 {
+        flex: 0 0 50%;
+    }
+
+}
+
+// ***** Large screen / desktop ***** //
+@media (min-width: $grid-breakpoint-large) {
+
+    .container {
+        max-width: $container-width-large;
+    }
+
+    .lg-grid-1-10 {
+        flex: 0 0 10%;
+    }
+
+    .lg-grid-1-5 {
+        flex: 0 0 20%;
+    }
+
+    .lg-grid-1-4 {
+        flex: 0 0 25%;
+    }
+
+    .lg-grid-1-3 {
+        flex: 0 0 33.3333334%;
+    }
+
+    .lg-grid-1-2 {
+        flex: 0 0 50%;
+    }
+
+}
+
+// ***** Extra large screen / wide desktop ***** //
+@media (min-width: $grid-breakpoint-extra-large) {
+    .container {
+        max-width: $container-width-extra-large;
+    }
+}
