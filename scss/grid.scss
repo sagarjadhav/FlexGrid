@@ -54,12 +54,12 @@ $grid-gutter: 30px !default;
 
 /* Alignment Top */
 .grid-top {
-    align-self: flex-start;
+    align-items: flex-start;
 }
 
 /* Alignment Bottom */
 .grid-bottom {
-    align-self: flex-end;
+    align-items: flex-end;
 }
 
 /* Alignment Center */
