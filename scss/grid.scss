@@ -30,6 +30,7 @@ $grid-gutter: 30px !default;
     display: flex;
     margin-left: -$grid-gutter / 2;
     margin-right: -$grid-gutter / 2;
+    flex-wrap: wrap;
 }
 
 /* Grid Cell */
@@ -43,11 +44,6 @@ $grid-gutter: 30px !default;
 }
 
 // ***** Custom styles for additional flex alignment options. ***** //
-
-/* Grid Wrap */
-.grid-wrap {
-    flex-wrap: wrap;
-}
 
 // ***** Alignment per row ***** //
 
@@ -121,6 +117,19 @@ $grid-gutter: 30px !default;
     .sm-grid-1-2 {
         flex: 0 0 50%;
     }
+
+    .sm-grid-2-3 {
+        flex: 0 0 66.66%;
+    }
+
+    .sm-grid-3-4 {
+        flex: 0 0 75%;
+    }
+
+    .sm-grid-1-1 {
+        flex: 0 0 100%;
+    }
+
 }
 
 /* Medium screen / tablet */
@@ -149,6 +158,19 @@ $grid-gutter: 30px !default;
     .md-grid-1-2 {
         flex: 0 0 50%;
     }
+
+    .md-grid-2-3 {
+        flex: 0 0 66.66%;
+    }
+
+    .md-grid-3-4 {
+        flex: 0 0 75%;
+    }
+
+    .md-grid-1-1 {
+        flex: 0 0 100%;
+    }
+
 }
 
 /* Large screen / desktop */
@@ -177,6 +199,19 @@ $grid-gutter: 30px !default;
     .lg-grid-1-2 {
         flex: 0 0 50%;
     }
+
+    .lg-grid-2-3 {
+        flex: 0 0 66.66%;
+    }
+
+    .lg-grid-3-4 {
+        flex: 0 0 75%;
+    }
+
+    .lg-grid-1-1 {
+        flex: 0 0 100%;
+    }
+
 }
 
 /* Extra large screen / wide desktop */
