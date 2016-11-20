@@ -71,16 +71,14 @@
 /* Extra small screen / phone */
 @media (max-width: 543px) {
   .grid {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
   }
 
   .grid-cell {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
   }
 }
 /* Small screen / phone */

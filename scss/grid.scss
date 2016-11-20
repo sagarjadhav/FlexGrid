@@ -83,11 +83,11 @@ $grid-gutter: 30px !default;
 @media( max-width: $grid-breakpoint-small - 1 ) {
 
     .grid {
-        flex-direction: column;
+        flex-flow: row wrap;
     }
 
     .grid-cell {
-        flex: 0 0 auto;
+        flex: 0 0 100%;
     }
 }
 
