@@ -88,6 +88,7 @@ $grid-gutter: 30px !default;
 
     .grid-cell {
         flex: 0 0 100%;
+        max-width: 100%; // IE11 Fix
     }
 }
 
@@ -98,36 +99,22 @@ $grid-gutter: 30px !default;
         max-width: $container-width-small;
     }
 
-    .sm-grid-1-10 {
-        flex: 0 0 10%;
-    }
-
-    .sm-grid-1-5 {
-        flex: 0 0 20%;
-    }
-
-    .sm-grid-1-4 {
-        flex: 0 0 25%;
-    }
-
-    .sm-grid-1-3 {
-        flex: 0 0 33.3333334%;
-    }
-
-    .sm-grid-1-2 {
-        flex: 0 0 50%;
+    @for $i from 1 through 6 {
+        $width: percentage(1 / $i);
+        .sm-grid-1-#{$i} {
+            flex: 0 0 $width;
+            max-width: $width; // IE11 Fix
+        }
     }
 
     .sm-grid-2-3 {
         flex: 0 0 66.66%;
+        max-width: 66.66%; // IE11 Fix
     }
 
     .sm-grid-3-4 {
         flex: 0 0 75%;
-    }
-
-    .sm-grid-1-1 {
-        flex: 0 0 100%;
+        max-width: 75%; // IE11 Fix
     }
 
 }
@@ -139,36 +126,22 @@ $grid-gutter: 30px !default;
         max-width: $container-width-medium;
     }
 
-    .md-grid-1-10 {
-        flex: 0 0 10%;
-    }
-
-    .md-grid-1-5 {
-        flex: 0 0 20%;
-    }
-
-    .md-grid-1-4 {
-        flex: 0 0 25%;
-    }
-
-    .md-grid-1-3 {
-        flex: 0 0 33.3333334%;
-    }
-
-    .md-grid-1-2 {
-        flex: 0 0 50%;
+    @for $i from 1 through 6 {
+        $width: percentage(1 / $i);
+        .md-grid-1-#{$i} {
+            flex: 0 0 $width;
+            max-width: $width; // IE11 Fix
+        }
     }
 
     .md-grid-2-3 {
         flex: 0 0 66.66%;
+        max-width: 66.66%; // IE11 Fix
     }
 
     .md-grid-3-4 {
         flex: 0 0 75%;
-    }
-
-    .md-grid-1-1 {
-        flex: 0 0 100%;
+        max-width: 75%; // IE11 Fix
     }
 
 }
@@ -180,38 +153,23 @@ $grid-gutter: 30px !default;
         max-width: $container-width-large;
     }
 
-    .lg-grid-1-10 {
-        flex: 0 0 10%;
-    }
-
-    .lg-grid-1-5 {
-        flex: 0 0 20%;
-    }
-
-    .lg-grid-1-4 {
-        flex: 0 0 25%;
-    }
-
-    .lg-grid-1-3 {
-        flex: 0 0 33.3333334%;
-    }
-
-    .lg-grid-1-2 {
-        flex: 0 0 50%;
+    @for $i from 1 through 6 {
+        $width: percentage(1 / $i);
+        .lg-grid-1-#{$i} {
+            flex: 0 0 $width;
+            max-width: $width; // IE11 Fix
+        }
     }
 
     .lg-grid-2-3 {
         flex: 0 0 66.66%;
+        max-width: 66.66%; // IE11 Fix
     }
 
     .lg-grid-3-4 {
         flex: 0 0 75%;
+        max-width: 75%; // IE11 Fix
     }
-
-    .lg-grid-1-1 {
-        flex: 0 0 100%;
-    }
-
 }
 
 /* Extra large screen / wide desktop */
